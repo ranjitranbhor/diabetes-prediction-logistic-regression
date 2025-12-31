@@ -43,28 +43,30 @@ Build a predictive model for Cedars Sinai to identify patients with Diabetes Mel
 - **seaborn**: Statistical data visualization
 - **scikit-learn**: Machine learning algorithms and metrics
 
-## Directory Structure:
-  diabetes-prediction-logistic-regression/
+## 🗂️ Project Structure
+```
+diabetes-prediction-logistic-regression/
 │
-├── README.md
-├── requirements.txt
-├── .gitignore
+├── README.md                           # Project documentation
+├── requirements.txt                    # Python dependencies
+├── .gitignore                          # Git ignore file
 │
-├── diabetes_prediction.py      # Main script (provided above)
-├── utils.py                     # Helper functions
-├── predict.py                   # Prediction script for new data
+├── diabetes_prediction.py              # Main prediction script
+├── utils.py                            # Helper functions
+├── predict.py                          # Prediction script for new data
 │
 ├── data/
-│   └── diabetes.csv
+│   └── diabetes.csv                    # Dataset
 │
-├── outputs/                     # Will be created automatically
+├── outputs/                            # Generated outputs (auto-created)
 │   ├── model_results.txt
 │   ├── missing_data_heatmap.png
 │   ├── outcome_distribution.png
 │   └── correlation_heatmap.png
 │
 └── notebooks/
-    └── diabetes_prediction_analysis.ipynb
+    └── diabetes_prediction_analysis.ipynb  # Jupyter notebook
+```
 
 ## 📦 Installation
 
