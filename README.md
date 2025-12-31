@@ -43,6 +43,29 @@ Build a predictive model for Cedars Sinai to identify patients with Diabetes Mel
 - **seaborn**: Statistical data visualization
 - **scikit-learn**: Machine learning algorithms and metrics
 
+## Directory Structure:
+  diabetes-prediction-logistic-regression/
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
+├── diabetes_prediction.py      # Main script (provided above)
+├── utils.py                     # Helper functions
+├── predict.py                   # Prediction script for new data
+│
+├── data/
+│   └── diabetes.csv
+│
+├── outputs/                     # Will be created automatically
+│   ├── model_results.txt
+│   ├── missing_data_heatmap.png
+│   ├── outcome_distribution.png
+│   └── correlation_heatmap.png
+│
+└── notebooks/
+    └── diabetes_prediction_analysis.ipynb
+
 ## 📦 Installation
 
 1. Clone the repository:
@@ -68,6 +91,12 @@ jupyter notebook notebooks/diabetes_prediction_analysis.ipynb
 1. Open the Jupyter notebook in Google Colab or locally
 2. Mount Google Drive (if using Colab) or adjust the file path
 3. Run all cells sequentially
+
+# Run the main script
+python diabetes_prediction.py
+
+# Make predictions on new data
+python predict.py
 
 ### Key Steps in the Notebook
 
